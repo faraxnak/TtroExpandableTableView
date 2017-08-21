@@ -1,0 +1,15 @@
+PODS:
+  - DynamicButton (4.0.0)
+  - EasyPeasy (1.4.2)
+
+DEPENDENCIES:
+  - DynamicButton
+  - EasyPeasy
+
+SPEC CHECKSUMS:
+  DynamicButton: ddc1e8d79e37f2761ab64df0c02e89061b05d812
+  EasyPeasy: 50e7130b61f495ce105796e438d4136e2c8d2cc0
+
+PODFILE CHECKSUM: a322b3272576eefa068fa7dffc8166d74c694b03
+
+COCOAPODS: 1.2.0.beta.1

@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B047FABAC5AEACC579E5083D8DBD2A /* DynamicButtonStylePause.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC6A654F45769C10E3C6EC1C911DDA /* DynamicButtonStylePause.swift */; };
+		0C0DABECE429B7BC34F98DAD145CAE34 /* DynamicButtonStyleArrowUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ADEBAAB1ADBC458042CFF50B754D64 /* DynamicButtonStyleArrowUp.swift */; };
+		0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA197BC4CA37858FD3191D3AF7785F /* DimensionAttribute.swift */; };
+		0F1E2C99E17511B333F3676550E7D05F /* DynamicButtonPathVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C04C9DFC2CF7946E9A46E3012A3649 /* DynamicButtonPathVector.swift */; };
+		1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B147364A09A05FA3B194B3CDDDC6BB /* Item.swift */; };
+		1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D65DA3FF6955573BB1CE6AA4B19D49D /* PositionAttribute+AppKit.swift */; };
+		21E2E71DC3B1512C0AD46EABD284FC2F /* PathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1D351CD0FBA72A0DC9A254D13C6E8E /* PathHelper.swift */; };
+		238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 965B667FC898B7963EA9A7D9AC5820D4 /* EasyPeasy-dummy.m */; };
+		2FF770BB2D136AE28DB4D1BD246BA9F5 /* DynamicButtonStyleCaretUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E79A31C149287C1500A2FDE561470E /* DynamicButtonStyleCaretUp.swift */; };
+		31F60DBB6662B43BB7182A94B1063E40 /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB959DE1C1D195E569196476AF2BCE /* CompoundAttribute.swift */; };
+		32A5CF7C9046F0D677E1D6DFF66EF549 /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8B64F5BE7C22FF629266DBFEEE2270 /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3474E4E655382B527D799C55021A3567 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A46EBA7ACB269D1615BD50A09DB2E7 /* Attribute.swift */; };
+		3F093B49F7DB552E6B9268F2A5ED0844 /* DynamicButtonStyleHorizontalMoreOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CFAAA8300FD5D7EBFE93B255BA4696 /* DynamicButtonStyleHorizontalMoreOptions.swift */; };
+		42DDC034671649DDD83A834774825CBB /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FE5B0EEB6DB1B73D21F1CFEC5EBBD /* PositionAttribute.swift */; };
+		44B2644538FBA736963EE6D7FC685A1A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D114D3D12BB2A59EFF602449DCAC15 /* Constant.swift */; };
+		455178C879B90C90F7E3BD7731E606B7 /* DynamicButtonStyleRewind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9764DB8C21148606B3FF8D8D6569759 /* DynamicButtonStyleRewind.swift */; };
+		48346BC8473097FCD0830B64DA26922C /* DynamicButtonStyleCheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F83CCB05251C5F3CA0F4DCD9B71C4 /* DynamicButtonStyleCheckMark.swift */; };
+		48AD84F7956F1A5E5DABAD3114576032 /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A7B80BB4FDFDADEFE905010CB2CD0 /* UIView+Easy.swift */; };
+		514FAEFD9AD493AFD27F853F31A901BA /* DynamicButtonStyleArrowDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD73132C86742805B87E9D4168FF189 /* DynamicButtonStyleArrowDown.swift */; };
+		538278C69843889DED9E515E7A6D1485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		55C78A8925CC7E1F2B5194398B914833 /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C18FE2AAFCC3EBEEE95C58C7FA57E4 /* Item+AppKit.swift */; };
+		584B53C655CCC4AF7C7F44A174D34F40 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A938ADD3B201893B6A7B238A63A55E49 /* DimensionAttribute+UIKit.swift */; };
+		5AB03DE71FDA66238B92E4087068E75A /* DynamicButtonStyleCaretDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE1670EE7012439F03D57FC03C90A4 /* DynamicButtonStyleCaretDown.swift */; };
+		627DB82F916E6224743447DA1B6413F7 /* DynamicButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5E3DBFA5605F3234C1C8EBBD39CE87 /* DynamicButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65AD0D8DCD2A875D3BB0EF6B0E4AD0C1 /* DynamicButtonStyleVerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDEEC731D17B1E98D418BB886FD3180 /* DynamicButtonStyleVerticalLine.swift */; };
+		6C0CC8AC2A23375376C68BE4CACCE3A2 /* DynamicButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28803379EA5AC5F0DFA05A3D32112F82 /* DynamicButtonStyle.swift */; };
+		6F41D8EAB54242BCB0A39F59C646F7B9 /* DynamicButtonStylePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A051B1CF9B1E2E78F7EBDB3167D02 /* DynamicButtonStylePlay.swift */; };
+		7169D8CCBF2C6F3F5716F2F4FFD49285 /* Pods-TtroExpandableTableViewSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D27166A678F8839BFF90D9CEDCF97 /* Pods-TtroExpandableTableViewSample-dummy.m */; };
+		7FD80237B2B9D85C9B5FAA2B95DADF7F /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63906B83EB5749C614F9173919329F47 /* ReferenceAttribute.swift */; };
+		80E33B7BB59A5D485D8136A84558C306 /* DynamicButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 318F26E8C407C480103E8284133A1FD6 /* DynamicButton-dummy.m */; };
+		88B9B5FE70A62BFBE7B65C140118A21B /* DynamicButtonStyleCircleClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69345B281A6838AE1BDBEE4F5F35742 /* DynamicButtonStyleCircleClose.swift */; };
+		8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB325CF84CE191E77F320FF0A011D40B /* UILayoutGuide+Easy.swift */; };
+		8EAA39E91B05C84BBAD5C920BF2F8653 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E9147F9F507E17513B64F18B9BFAD8 /* Node.swift */; };
+		96CB42448265F4ADF2726A93B801399E /* DynamicButtonStyleVerticalMoreOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AC789086B0BFC7584C2D406409A0F7 /* DynamicButtonStyleVerticalMoreOptions.swift */; };
+		9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB5CA02DE452C5AF71F1D6422F809 /* Priority.swift */; };
+		A50DDED9EEF2B25996295900DE56563A /* DynamicButtonStyleDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69CF120F1618838DB54CA5F80DBAC13 /* DynamicButtonStyleDownload.swift */; };
+		A554924B27F462FF4A54502DCF030F18 /* DynamicButtonStyleReload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A1E36877F0B953EB79521543FA5D8 /* DynamicButtonStyleReload.swift */; };
+		B753A0CAF9D069F1D794E270CF921A6E /* DynamicButtonStyleArrowRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042D3071DF549652FA618A768F6B670 /* DynamicButtonStyleArrowRight.swift */; };
+		BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F94567721BD8CD5231724A9929F87 /* DimensionAttribute+AppKit.swift */; };
+		BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B0121ADAF1FD907810A78FF57CE957 /* Item+UIKit.swift */; };
+		BD7361611C35CB200568FAF2D654E95A /* DynamicButtonStyleFastForward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85211CEA7132E2C4825DFAB49E392735 /* DynamicButtonStyleFastForward.swift */; };
+		C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C284E41DEF2F86BF0463C8A439992 /* NSLayoutGuide+Easy.swift */; };
+		C65A9916F943AC64F8F33E10DE23A688 /* DynamicButtonStyleCirclePlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E2A9F25B759E4E2E8E82DA63CAAAD /* DynamicButtonStyleCirclePlus.swift */; };
+		CB2885BCB0B9F8F686C8FA5B08749D49 /* DynamicButtonStyleHamburger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8CC2A97DA0DA0DD3A14793D6CF0C8A /* DynamicButtonStyleHamburger.swift */; };
+		CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC47021C7CB7AD89B0E46659C6C6B3 /* PositionAttribute+UIKit.swift */; };
+		D033F55DFFCC59CBBD62DC9970B2899E /* DynamicButtonStyleClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DD84B3E899066A38FD4BA64F085B2A /* DynamicButtonStyleClose.swift */; };
+		D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F8EDCBE9F17DBC02AAD0400571C1D /* Context.swift */; };
+		D334D7B522109954DD4C383435F9785E /* DynamicButtonBuildableStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA8E5650E786DBC557AA0C71C6C5B01 /* DynamicButtonBuildableStyle.swift */; };
+		D84CEA6B4A97981CA73AE98095D41876 /* DynamicButtonStyleCaretLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D8CE4B8547C0E377B490AB3EFCE94 /* DynamicButtonStyleCaretLeft.swift */; };
+		D8E3679B2AC877A0ABCC87320130653A /* DynamicButtonStylePlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD5AF050FC2114622319968E103C572 /* DynamicButtonStylePlus.swift */; };
+		DA81588B8021D88A39C950324466DEA4 /* DynamicButtonStyleArrowLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946F6906EFB8A64BC06DCD01F08CFE8 /* DynamicButtonStyleArrowLeft.swift */; };
+		DEB7E92612CA9B7DD6326E9722C120E3 /* DynamicButtonStyleStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F637DCD04F0578E90AFD629EDF3D314 /* DynamicButtonStyleStop.swift */; };
+		E1280C747A78844BDEBD470D8606B037 /* Pods-TtroExpandableTableViewSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B108B8E9CA720F5215DAD30515ECF0 /* Pods-TtroExpandableTableViewSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E17FAC8F775A81481675C15687309F54 /* DynamicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19044D381A78B56EBE4BBA0E75AB1988 /* DynamicButton.swift */; };
+		EC25A7F8E597B9C41E02F57EF0A48FD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		EDB236F3139700DAA77B89630C40382F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		EEA8F0B0C689F898728D08DE3998ABDE /* DynamicButtonStyleDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826B84A99694A98C49FC816BCC35E29 /* DynamicButtonStyleDot.swift */; };
+		F81601D7380A2D55DD2EF91F1586894A /* DynamicButtonStyleCaretRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D79A5A3AC5795E288B23C1E9774AFD /* DynamicButtonStyleCaretRight.swift */; };
+		F8A04A00749B2932DC597163FC902993 /* DynamicButtonStyleNone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9753B5F9FAD5C78908E47E81A383D1F1 /* DynamicButtonStyleNone.swift */; };
+		FDF91FB1997EF4CD326B1876C3556952 /* DynamicButtonStyleHorizontalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081B83FAA9E3B84982EE9CC52E3A57 /* DynamicButtonStyleHorizontalLine.swift */; };
+		FE600361B8F8D819D07EE55AD1BA9BCF /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375E63F50C8D48A5784C6E2FA12600E /* NSView+Easy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31E861E888DF78E1BD92C72E731F71A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		4D3948D4A1A3A8BB69FC1CD6D5D4E26D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA074C577779FF88EB7926723ED9D0B1;
+			remoteInfo = DynamicButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03734B4C36C9A8C1DF928AA2F534E102 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06DA197BC4CA37858FD3191D3AF7785F /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
+		08CB959DE1C1D195E569196476AF2BCE /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
+		0D8B64F5BE7C22FF629266DBFEEE2270 /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
+		17A97097A4C07E8BAD3C57EB4E00B34D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1826B84A99694A98C49FC816BCC35E29 /* DynamicButtonStyleDot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleDot.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleDot.swift; sourceTree = "<group>"; };
+		19044D381A78B56EBE4BBA0E75AB1988 /* DynamicButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButton.swift; path = Sources/DynamicButton.swift; sourceTree = "<group>"; };
+		1946F6906EFB8A64BC06DCD01F08CFE8 /* DynamicButtonStyleArrowLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleArrowLeft.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleArrowLeft.swift; sourceTree = "<group>"; };
+		1ADC47021C7CB7AD89B0E46659C6C6B3 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		1AE650BB98201D0FD0279E94A10BAED9 /* DynamicButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DynamicButton.modulemap; sourceTree = "<group>"; };
+		1B1D351CD0FBA72A0DC9A254D13C6E8E /* PathHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathHelper.swift; path = Sources/PathHelper.swift; sourceTree = "<group>"; };
+		1C081B83FAA9E3B84982EE9CC52E3A57 /* DynamicButtonStyleHorizontalLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleHorizontalLine.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleHorizontalLine.swift; sourceTree = "<group>"; };
+		1FD5AF050FC2114622319968E103C572 /* DynamicButtonStylePlus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStylePlus.swift; path = Sources/DynamicButtonStyles/DynamicButtonStylePlus.swift; sourceTree = "<group>"; };
+		23BE1670EE7012439F03D57FC03C90A4 /* DynamicButtonStyleCaretDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleCaretDown.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleCaretDown.swift; sourceTree = "<group>"; };
+		28803379EA5AC5F0DFA05A3D32112F82 /* DynamicButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyle.swift; path = Sources/DynamicButtonStyle.swift; sourceTree = "<group>"; };
+		28A46EBA7ACB269D1615BD50A09DB2E7 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		318F26E8C407C480103E8284133A1FD6 /* DynamicButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicButton-dummy.m"; sourceTree = "<group>"; };
+		31DD84B3E899066A38FD4BA64F085B2A /* DynamicButtonStyleClose.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleClose.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleClose.swift; sourceTree = "<group>"; };
+		36B0121ADAF1FD907810A78FF57CE957 /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
+		37C04C9DFC2CF7946E9A46E3012A3649 /* DynamicButtonPathVector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonPathVector.swift; path = Sources/DynamicButtonPathVector.swift; sourceTree = "<group>"; };
+		3BDEEC731D17B1E98D418BB886FD3180 /* DynamicButtonStyleVerticalLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleVerticalLine.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleVerticalLine.swift; sourceTree = "<group>"; };
+		3D63ED44156E582B6E5B5ECE94420C46 /* Pods_TtroExpandableTableViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TtroExpandableTableViewSample.framework; path = "Pods-TtroExpandableTableViewSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F0AACD1428947E01F4B54EFDAD25D5 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
+		4D62FD1CF90E75047A094B9C43FCD213 /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
+		4DD73132C86742805B87E9D4168FF189 /* DynamicButtonStyleArrowDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleArrowDown.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleArrowDown.swift; sourceTree = "<group>"; };
+		4EA8E5650E786DBC557AA0C71C6C5B01 /* DynamicButtonBuildableStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonBuildableStyle.swift; path = Sources/DynamicButtonBuildableStyle.swift; sourceTree = "<group>"; };
+		4F637DCD04F0578E90AFD629EDF3D314 /* DynamicButtonStyleStop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleStop.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleStop.swift; sourceTree = "<group>"; };
+		5042D3071DF549652FA618A768F6B670 /* DynamicButtonStyleArrowRight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleArrowRight.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleArrowRight.swift; sourceTree = "<group>"; };
+		54AC789086B0BFC7584C2D406409A0F7 /* DynamicButtonStyleVerticalMoreOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleVerticalMoreOptions.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleVerticalMoreOptions.swift; sourceTree = "<group>"; };
+		58ADEBAAB1ADBC458042CFF50B754D64 /* DynamicButtonStyleArrowUp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleArrowUp.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleArrowUp.swift; sourceTree = "<group>"; };
+		5A9731D96FA41343FB77CF488CD3A9D6 /* Pods-TtroExpandableTableViewSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroExpandableTableViewSample-resources.sh"; sourceTree = "<group>"; };
+		5E9D8CE4B8547C0E377B490AB3EFCE94 /* DynamicButtonStyleCaretLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleCaretLeft.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleCaretLeft.swift; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		63906B83EB5749C614F9173919329F47 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		6AEA24D050D2B22F217205AD91A09CED /* Pods-TtroExpandableTableViewSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroExpandableTableViewSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D5E3DBFA5605F3234C1C8EBBD39CE87 /* DynamicButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicButton-umbrella.h"; sourceTree = "<group>"; };
+		6DB2787C30656729C41FA9B472FB4053 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3B222EC18DF5560454179789642835 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyPeasy.framework; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6E2A9F25B759E4E2E8E82DA63CAAAD /* DynamicButtonStyleCirclePlus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleCirclePlus.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleCirclePlus.swift; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		829A1E36877F0B953EB79521543FA5D8 /* DynamicButtonStyleReload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleReload.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleReload.swift; sourceTree = "<group>"; };
+		846D27166A678F8839BFF90D9CEDCF97 /* Pods-TtroExpandableTableViewSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroExpandableTableViewSample-dummy.m"; sourceTree = "<group>"; };
+		85211CEA7132E2C4825DFAB49E392735 /* DynamicButtonStyleFastForward.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleFastForward.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleFastForward.swift; sourceTree = "<group>"; };
+		91CFAAA8300FD5D7EBFE93B255BA4696 /* DynamicButtonStyleHorizontalMoreOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleHorizontalMoreOptions.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleHorizontalMoreOptions.swift; sourceTree = "<group>"; };
+		9375E63F50C8D48A5784C6E2FA12600E /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		965B667FC898B7963EA9A7D9AC5820D4 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+		9753B5F9FAD5C78908E47E81A383D1F1 /* DynamicButtonStyleNone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleNone.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleNone.swift; sourceTree = "<group>"; };
+		9A2C284E41DEF2F86BF0463C8A439992 /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		9B22160837208A4146570A53DC738CB5 /* Pods-TtroExpandableTableViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroExpandableTableViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		9D65DA3FF6955573BB1CE6AA4B19D49D /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		A26F83CCB05251C5F3CA0F4DCD9B71C4 /* DynamicButtonStyleCheckMark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleCheckMark.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleCheckMark.swift; sourceTree = "<group>"; };
+		A938ADD3B201893B6A7B238A63A55E49 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		A9D114D3D12BB2A59EFF602449DCAC15 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
+		AC6E7F966B0B2DEBE893D9CB5BA0469D /* Pods-TtroExpandableTableViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroExpandableTableViewSample.release.xcconfig"; sourceTree = "<group>"; };
+		B1B147364A09A05FA3B194B3CDDDC6BB /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
+		B9764DB8C21148606B3FF8D8D6569759 /* DynamicButtonStyleRewind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleRewind.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleRewind.swift; sourceTree = "<group>"; };
+		BA0175BB86A8927CDBAAEE522129523B /* DynamicButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicButton.framework; path = DynamicButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2F8EDCBE9F17DBC02AAD0400571C1D /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
+		C03BC1B5E5559108271B9FD6837AD9A0 /* Pods-TtroExpandableTableViewSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroExpandableTableViewSample-frameworks.sh"; sourceTree = "<group>"; };
+		C5D79A5A3AC5795E288B23C1E9774AFD /* DynamicButtonStyleCaretRight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleCaretRight.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleCaretRight.swift; sourceTree = "<group>"; };
+		C69345B281A6838AE1BDBEE4F5F35742 /* DynamicButtonStyleCircleClose.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleCircleClose.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleCircleClose.swift; sourceTree = "<group>"; };
+		C7B108B8E9CA720F5215DAD30515ECF0 /* Pods-TtroExpandableTableViewSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroExpandableTableViewSample-umbrella.h"; sourceTree = "<group>"; };
+		CD492E5B89DFC243947CE4D4E2059B8B /* DynamicButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicButton.xcconfig; sourceTree = "<group>"; };
+		CE4FE5B0EEB6DB1B73D21F1CFEC5EBBD /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
+		CF8CC2A97DA0DA0DD3A14793D6CF0C8A /* DynamicButtonStyleHamburger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleHamburger.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleHamburger.swift; sourceTree = "<group>"; };
+		D29F94567721BD8CD5231724A9929F87 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		D2E9147F9F507E17513B64F18B9BFAD8 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		D4C18FE2AAFCC3EBEEE95C58C7FA57E4 /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
+		D69CF120F1618838DB54CA5F80DBAC13 /* DynamicButtonStyleDownload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleDownload.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleDownload.swift; sourceTree = "<group>"; };
+		DA2A051B1CF9B1E2E78F7EBDB3167D02 /* DynamicButtonStylePlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStylePlay.swift; path = Sources/DynamicButtonStyles/DynamicButtonStylePlay.swift; sourceTree = "<group>"; };
+		DC89878DC1364DC88591D651CA71D341 /* DynamicButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicButton-prefix.pch"; sourceTree = "<group>"; };
+		DD7BB5CA02DE452C5AF71F1D6422F809 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
+		E3DC6A654F45769C10E3C6EC1C911DDA /* DynamicButtonStylePause.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStylePause.swift; path = Sources/DynamicButtonStyles/DynamicButtonStylePause.swift; sourceTree = "<group>"; };
+		F1E79A31C149287C1500A2FDE561470E /* DynamicButtonStyleCaretUp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicButtonStyleCaretUp.swift; path = Sources/DynamicButtonStyles/DynamicButtonStyleCaretUp.swift; sourceTree = "<group>"; };
+		F43BF6BF29C943A8D21B91F1DA2D9BE2 /* Pods-TtroExpandableTableViewSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TtroExpandableTableViewSample.modulemap"; sourceTree = "<group>"; };
+		F78F2047AA444B4BA489FD64401DDDE5 /* Pods-TtroExpandableTableViewSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroExpandableTableViewSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB325CF84CE191E77F320FF0A011D40B /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		FB7A7B80BB4FDFDADEFE905010CB2CD0 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		FD147F6748EAFC8C32091C54DC3CE024 /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E57A933A5FDABAC199C276B94606021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538278C69843889DED9E515E7A6D1485 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85787F9A1F390DE0D501F97F3A671DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAA39E91B05C84BBAD5C920BF2F8653 /* Foundation.framework in Frameworks */,
+				EC25A7F8E597B9C41E02F57EF0A48FD1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EEEE83FF68090FE613948B95942A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB236F3139700DAA77B89630C40382F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06FEF98816AF438F0EDFF90506667E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA0175BB86A8927CDBAAEE522129523B /* DynamicButton.framework */,
+				6F3B222EC18DF5560454179789642835 /* EasyPeasy.framework */,
+				3D63ED44156E582B6E5B5ECE94420C46 /* Pods_TtroExpandableTableViewSample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BB8DA1E86FE569156726FD22886B75C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AE650BB98201D0FD0279E94A10BAED9 /* DynamicButton.modulemap */,
+				CD492E5B89DFC243947CE4D4E2059B8B /* DynamicButton.xcconfig */,
+				318F26E8C407C480103E8284133A1FD6 /* DynamicButton-dummy.m */,
+				DC89878DC1364DC88591D651CA71D341 /* DynamicButton-prefix.pch */,
+				6D5E3DBFA5605F3234C1C8EBBD39CE87 /* DynamicButton-umbrella.h */,
+				17A97097A4C07E8BAD3C57EB4E00B34D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DynamicButton";
+			sourceTree = "<group>";
+		};
+		1C6D51408800C06B068DCA5DA76FAA11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D62FD1CF90E75047A094B9C43FCD213 /* EasyPeasy.modulemap */,
+				46F0AACD1428947E01F4B54EFDAD25D5 /* EasyPeasy.xcconfig */,
+				965B667FC898B7963EA9A7D9AC5820D4 /* EasyPeasy-dummy.m */,
+				FD147F6748EAFC8C32091C54DC3CE024 /* EasyPeasy-prefix.pch */,
+				0D8B64F5BE7C22FF629266DBFEEE2270 /* EasyPeasy-umbrella.h */,
+				03734B4C36C9A8C1DF928AA2F534E102 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyPeasy";
+			sourceTree = "<group>";
+		};
+		1D556AA652361AC25EA28216AAC9C45E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E60A26709A0241B50A76A636B89C20A /* Pods-TtroExpandableTableViewSample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3E60A26709A0241B50A76A636B89C20A /* Pods-TtroExpandableTableViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				6DB2787C30656729C41FA9B472FB4053 /* Info.plist */,
+				F43BF6BF29C943A8D21B91F1DA2D9BE2 /* Pods-TtroExpandableTableViewSample.modulemap */,
+				6AEA24D050D2B22F217205AD91A09CED /* Pods-TtroExpandableTableViewSample-acknowledgements.markdown */,
+				F78F2047AA444B4BA489FD64401DDDE5 /* Pods-TtroExpandableTableViewSample-acknowledgements.plist */,
+				846D27166A678F8839BFF90D9CEDCF97 /* Pods-TtroExpandableTableViewSample-dummy.m */,
+				C03BC1B5E5559108271B9FD6837AD9A0 /* Pods-TtroExpandableTableViewSample-frameworks.sh */,
+				5A9731D96FA41343FB77CF488CD3A9D6 /* Pods-TtroExpandableTableViewSample-resources.sh */,
+				C7B108B8E9CA720F5215DAD30515ECF0 /* Pods-TtroExpandableTableViewSample-umbrella.h */,
+				9B22160837208A4146570A53DC738CB5 /* Pods-TtroExpandableTableViewSample.debug.xcconfig */,
+				AC6E7F966B0B2DEBE893D9CB5BA0469D /* Pods-TtroExpandableTableViewSample.release.xcconfig */,
+			);
+			name = "Pods-TtroExpandableTableViewSample";
+			path = "Target Support Files/Pods-TtroExpandableTableViewSample";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D35E52C67ED40B8C02732121F726238 /* EasyPeasy */ = {
+			isa = PBXGroup;
+			children = (
+				28A46EBA7ACB269D1615BD50A09DB2E7 /* Attribute.swift */,
+				08CB959DE1C1D195E569196476AF2BCE /* CompoundAttribute.swift */,
+				A9D114D3D12BB2A59EFF602449DCAC15 /* Constant.swift */,
+				BE2F8EDCBE9F17DBC02AAD0400571C1D /* Context.swift */,
+				06DA197BC4CA37858FD3191D3AF7785F /* DimensionAttribute.swift */,
+				D29F94567721BD8CD5231724A9929F87 /* DimensionAttribute+AppKit.swift */,
+				A938ADD3B201893B6A7B238A63A55E49 /* DimensionAttribute+UIKit.swift */,
+				B1B147364A09A05FA3B194B3CDDDC6BB /* Item.swift */,
+				D4C18FE2AAFCC3EBEEE95C58C7FA57E4 /* Item+AppKit.swift */,
+				36B0121ADAF1FD907810A78FF57CE957 /* Item+UIKit.swift */,
+				D2E9147F9F507E17513B64F18B9BFAD8 /* Node.swift */,
+				9A2C284E41DEF2F86BF0463C8A439992 /* NSLayoutGuide+Easy.swift */,
+				9375E63F50C8D48A5784C6E2FA12600E /* NSView+Easy.swift */,
+				CE4FE5B0EEB6DB1B73D21F1CFEC5EBBD /* PositionAttribute.swift */,
+				9D65DA3FF6955573BB1CE6AA4B19D49D /* PositionAttribute+AppKit.swift */,
+				1ADC47021C7CB7AD89B0E46659C6C6B3 /* PositionAttribute+UIKit.swift */,
+				DD7BB5CA02DE452C5AF71F1D6422F809 /* Priority.swift */,
+				63906B83EB5749C614F9173919329F47 /* ReferenceAttribute.swift */,
+				FB325CF84CE191E77F320FF0A011D40B /* UILayoutGuide+Easy.swift */,
+				FB7A7B80BB4FDFDADEFE905010CB2CD0 /* UIView+Easy.swift */,
+				1C6D51408800C06B068DCA5DA76FAA11 /* Support Files */,
+			);
+			name = EasyPeasy;
+			path = EasyPeasy;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				B6095F158C872D18DDCF676ED5F61E01 /* Pods */,
+				06FEF98816AF438F0EDFF90506667E50 /* Products */,
+				1D556AA652361AC25EA28216AAC9C45E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		82FE3163219C5D30E8E946F6A9250AA5 /* DynamicButton */ = {
+			isa = PBXGroup;
+			children = (
+				19044D381A78B56EBE4BBA0E75AB1988 /* DynamicButton.swift */,
+				4EA8E5650E786DBC557AA0C71C6C5B01 /* DynamicButtonBuildableStyle.swift */,
+				37C04C9DFC2CF7946E9A46E3012A3649 /* DynamicButtonPathVector.swift */,
+				28803379EA5AC5F0DFA05A3D32112F82 /* DynamicButtonStyle.swift */,
+				4DD73132C86742805B87E9D4168FF189 /* DynamicButtonStyleArrowDown.swift */,
+				1946F6906EFB8A64BC06DCD01F08CFE8 /* DynamicButtonStyleArrowLeft.swift */,
+				5042D3071DF549652FA618A768F6B670 /* DynamicButtonStyleArrowRight.swift */,
+				58ADEBAAB1ADBC458042CFF50B754D64 /* DynamicButtonStyleArrowUp.swift */,
+				23BE1670EE7012439F03D57FC03C90A4 /* DynamicButtonStyleCaretDown.swift */,
+				5E9D8CE4B8547C0E377B490AB3EFCE94 /* DynamicButtonStyleCaretLeft.swift */,
+				C5D79A5A3AC5795E288B23C1E9774AFD /* DynamicButtonStyleCaretRight.swift */,
+				F1E79A31C149287C1500A2FDE561470E /* DynamicButtonStyleCaretUp.swift */,
+				A26F83CCB05251C5F3CA0F4DCD9B71C4 /* DynamicButtonStyleCheckMark.swift */,
+				C69345B281A6838AE1BDBEE4F5F35742 /* DynamicButtonStyleCircleClose.swift */,
+				7B6E2A9F25B759E4E2E8E82DA63CAAAD /* DynamicButtonStyleCirclePlus.swift */,
+				31DD84B3E899066A38FD4BA64F085B2A /* DynamicButtonStyleClose.swift */,
+				1826B84A99694A98C49FC816BCC35E29 /* DynamicButtonStyleDot.swift */,
+				D69CF120F1618838DB54CA5F80DBAC13 /* DynamicButtonStyleDownload.swift */,
+				85211CEA7132E2C4825DFAB49E392735 /* DynamicButtonStyleFastForward.swift */,
+				CF8CC2A97DA0DA0DD3A14793D6CF0C8A /* DynamicButtonStyleHamburger.swift */,
+				1C081B83FAA9E3B84982EE9CC52E3A57 /* DynamicButtonStyleHorizontalLine.swift */,
+				91CFAAA8300FD5D7EBFE93B255BA4696 /* DynamicButtonStyleHorizontalMoreOptions.swift */,
+				9753B5F9FAD5C78908E47E81A383D1F1 /* DynamicButtonStyleNone.swift */,
+				E3DC6A654F45769C10E3C6EC1C911DDA /* DynamicButtonStylePause.swift */,
+				DA2A051B1CF9B1E2E78F7EBDB3167D02 /* DynamicButtonStylePlay.swift */,
+				1FD5AF050FC2114622319968E103C572 /* DynamicButtonStylePlus.swift */,
+				829A1E36877F0B953EB79521543FA5D8 /* DynamicButtonStyleReload.swift */,
+				B9764DB8C21148606B3FF8D8D6569759 /* DynamicButtonStyleRewind.swift */,
+				4F637DCD04F0578E90AFD629EDF3D314 /* DynamicButtonStyleStop.swift */,
+				3BDEEC731D17B1E98D418BB886FD3180 /* DynamicButtonStyleVerticalLine.swift */,
+				54AC789086B0BFC7584C2D406409A0F7 /* DynamicButtonStyleVerticalMoreOptions.swift */,
+				1B1D351CD0FBA72A0DC9A254D13C6E8E /* PathHelper.swift */,
+				1BB8DA1E86FE569156726FD22886B75C /* Support Files */,
+			);
+			name = DynamicButton;
+			path = DynamicButton;
+			sourceTree = "<group>";
+		};
+		B6095F158C872D18DDCF676ED5F61E01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82FE3163219C5D30E8E946F6A9250AA5 /* DynamicButton */,
+				6D35E52C67ED40B8C02732121F726238 /* EasyPeasy */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19AE6FF4FBE0B8507632F4791EF0F02C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1280C747A78844BDEBD470D8606B037 /* Pods-TtroExpandableTableViewSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A997E6E8C8D90774BDD7E72EB07D7E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A5CF7C9046F0D677E1D6DFF66EF549 /* EasyPeasy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7429B3BBE4AD2E079E67AE88398AFC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627DB82F916E6224743447DA1B6413F7 /* DynamicButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F7CA71BC36ABC9A30E8229CDDA09C89 /* Pods-TtroExpandableTableViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D80CE7E8B4D826E58797A589D7AF0F6 /* Build configuration list for PBXNativeTarget "Pods-TtroExpandableTableViewSample" */;
+			buildPhases = (
+				1020759A122E1C040C401A658416B975 /* Sources */,
+				3E57A933A5FDABAC199C276B94606021 /* Frameworks */,
+				19AE6FF4FBE0B8507632F4791EF0F02C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63CC23AC7993905A190275A451D033FB /* PBXTargetDependency */,
+				5E090E7E1B9A22FBE9AA80D9CC999838 /* PBXTargetDependency */,
+			);
+			name = "Pods-TtroExpandableTableViewSample";
+			productName = "Pods-TtroExpandableTableViewSample";
+			productReference = 3D63ED44156E582B6E5B5ECE94420C46 /* Pods_TtroExpandableTableViewSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */;
+			buildPhases = (
+				BEE1CD701E167910F30CCB5D80ED2743 /* Sources */,
+				DC24EEEE83FF68090FE613948B95942A /* Frameworks */,
+				6A997E6E8C8D90774BDD7E72EB07D7E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyPeasy;
+			productName = EasyPeasy;
+			productReference = 6F3B222EC18DF5560454179789642835 /* EasyPeasy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA074C577779FF88EB7926723ED9D0B1 /* DynamicButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD6589DA8D76D6D5E6117F264DAC83E8 /* Build configuration list for PBXNativeTarget "DynamicButton" */;
+			buildPhases = (
+				7A857721D555995D40C675810D0CA5F0 /* Sources */,
+				D85787F9A1F390DE0D501F97F3A671DB /* Frameworks */,
+				F7429B3BBE4AD2E079E67AE88398AFC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicButton;
+			productName = DynamicButton;
+			productReference = BA0175BB86A8927CDBAAEE522129523B /* DynamicButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 06FEF98816AF438F0EDFF90506667E50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA074C577779FF88EB7926723ED9D0B1 /* DynamicButton */,
+				B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */,
+				1F7CA71BC36ABC9A30E8229CDDA09C89 /* Pods-TtroExpandableTableViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1020759A122E1C040C401A658416B975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7169D8CCBF2C6F3F5716F2F4FFD49285 /* Pods-TtroExpandableTableViewSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A857721D555995D40C675810D0CA5F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E33B7BB59A5D485D8136A84558C306 /* DynamicButton-dummy.m in Sources */,
+				E17FAC8F775A81481675C15687309F54 /* DynamicButton.swift in Sources */,
+				D334D7B522109954DD4C383435F9785E /* DynamicButtonBuildableStyle.swift in Sources */,
+				0F1E2C99E17511B333F3676550E7D05F /* DynamicButtonPathVector.swift in Sources */,
+				6C0CC8AC2A23375376C68BE4CACCE3A2 /* DynamicButtonStyle.swift in Sources */,
+				514FAEFD9AD493AFD27F853F31A901BA /* DynamicButtonStyleArrowDown.swift in Sources */,
+				DA81588B8021D88A39C950324466DEA4 /* DynamicButtonStyleArrowLeft.swift in Sources */,
+				B753A0CAF9D069F1D794E270CF921A6E /* DynamicButtonStyleArrowRight.swift in Sources */,
+				0C0DABECE429B7BC34F98DAD145CAE34 /* DynamicButtonStyleArrowUp.swift in Sources */,
+				5AB03DE71FDA66238B92E4087068E75A /* DynamicButtonStyleCaretDown.swift in Sources */,
+				D84CEA6B4A97981CA73AE98095D41876 /* DynamicButtonStyleCaretLeft.swift in Sources */,
+				F81601D7380A2D55DD2EF91F1586894A /* DynamicButtonStyleCaretRight.swift in Sources */,
+				2FF770BB2D136AE28DB4D1BD246BA9F5 /* DynamicButtonStyleCaretUp.swift in Sources */,
+				48346BC8473097FCD0830B64DA26922C /* DynamicButtonStyleCheckMark.swift in Sources */,
+				88B9B5FE70A62BFBE7B65C140118A21B /* DynamicButtonStyleCircleClose.swift in Sources */,
+				C65A9916F943AC64F8F33E10DE23A688 /* DynamicButtonStyleCirclePlus.swift in Sources */,
+				D033F55DFFCC59CBBD62DC9970B2899E /* DynamicButtonStyleClose.swift in Sources */,
+				EEA8F0B0C689F898728D08DE3998ABDE /* DynamicButtonStyleDot.swift in Sources */,
+				A50DDED9EEF2B25996295900DE56563A /* DynamicButtonStyleDownload.swift in Sources */,
+				BD7361611C35CB200568FAF2D654E95A /* DynamicButtonStyleFastForward.swift in Sources */,
+				CB2885BCB0B9F8F686C8FA5B08749D49 /* DynamicButtonStyleHamburger.swift in Sources */,
+				FDF91FB1997EF4CD326B1876C3556952 /* DynamicButtonStyleHorizontalLine.swift in Sources */,
+				3F093B49F7DB552E6B9268F2A5ED0844 /* DynamicButtonStyleHorizontalMoreOptions.swift in Sources */,
+				F8A04A00749B2932DC597163FC902993 /* DynamicButtonStyleNone.swift in Sources */,
+				03B047FABAC5AEACC579E5083D8DBD2A /* DynamicButtonStylePause.swift in Sources */,
+				6F41D8EAB54242BCB0A39F59C646F7B9 /* DynamicButtonStylePlay.swift in Sources */,
+				D8E3679B2AC877A0ABCC87320130653A /* DynamicButtonStylePlus.swift in Sources */,
+				A554924B27F462FF4A54502DCF030F18 /* DynamicButtonStyleReload.swift in Sources */,
+				455178C879B90C90F7E3BD7731E606B7 /* DynamicButtonStyleRewind.swift in Sources */,
+				DEB7E92612CA9B7DD6326E9722C120E3 /* DynamicButtonStyleStop.swift in Sources */,
+				65AD0D8DCD2A875D3BB0EF6B0E4AD0C1 /* DynamicButtonStyleVerticalLine.swift in Sources */,
+				96CB42448265F4ADF2726A93B801399E /* DynamicButtonStyleVerticalMoreOptions.swift in Sources */,
+				21E2E71DC3B1512C0AD46EABD284FC2F /* PathHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE1CD701E167910F30CCB5D80ED2743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3474E4E655382B527D799C55021A3567 /* Attribute.swift in Sources */,
+				31F60DBB6662B43BB7182A94B1063E40 /* CompoundAttribute.swift in Sources */,
+				44B2644538FBA736963EE6D7FC685A1A /* Constant.swift in Sources */,
+				D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */,
+				BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */,
+				584B53C655CCC4AF7C7F44A174D34F40 /* DimensionAttribute+UIKit.swift in Sources */,
+				0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */,
+				238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */,
+				55C78A8925CC7E1F2B5194398B914833 /* Item+AppKit.swift in Sources */,
+				BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */,
+				1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */,
+				9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */,
+				C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */,
+				FE600361B8F8D819D07EE55AD1BA9BCF /* NSView+Easy.swift in Sources */,
+				1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */,
+				CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */,
+				42DDC034671649DDD83A834774825CBB /* PositionAttribute.swift in Sources */,
+				9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */,
+				7FD80237B2B9D85C9B5FAA2B95DADF7F /* ReferenceAttribute.swift in Sources */,
+				8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */,
+				48AD84F7956F1A5E5DABAD3114576032 /* UIView+Easy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E090E7E1B9A22FBE9AA80D9CC999838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = 31E861E888DF78E1BD92C72E731F71A4 /* PBXContainerItemProxy */;
+		};
+		63CC23AC7993905A190275A451D033FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicButton;
+			target = BA074C577779FF88EB7926723ED9D0B1 /* DynamicButton */;
+			targetProxy = 4D3948D4A1A3A8BB69FC1CD6D5D4E26D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2ECD761962BA28BF644464724B7CA6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6E7F966B0B2DEBE893D9CB5BA0469D /* Pods-TtroExpandableTableViewSample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroExpandableTableViewSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroExpandableTableViewSample/Pods-TtroExpandableTableViewSample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroExpandableTableViewSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31CDC30198B48C5C456D39F35840D7ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F0AACD1428947E01F4B54EFDAD25D5 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		506AF2D1B3064CB0895B84E13D456873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F0AACD1428947E01F4B54EFDAD25D5 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		635FEF1DFD1955BF753ADF966637D41A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B22160837208A4146570A53DC738CB5 /* Pods-TtroExpandableTableViewSample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroExpandableTableViewSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroExpandableTableViewSample/Pods-TtroExpandableTableViewSample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroExpandableTableViewSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A55DC5CE2550A89CE8316658F174BA94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD492E5B89DFC243947CE4D4E2059B8B /* DynamicButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicButton/DynamicButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynamicButton/DynamicButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DynamicButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E78959EFAF42CF097918591BB6FAE55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD492E5B89DFC243947CE4D4E2059B8B /* DynamicButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicButton/DynamicButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynamicButton/DynamicButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DynamicButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506AF2D1B3064CB0895B84E13D456873 /* Debug */,
+				31CDC30198B48C5C456D39F35840D7ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D80CE7E8B4D826E58797A589D7AF0F6 /* Build configuration list for PBXNativeTarget "Pods-TtroExpandableTableViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635FEF1DFD1955BF753ADF966637D41A /* Debug */,
+				2ECD761962BA28BF644464724B7CA6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD6589DA8D76D6D5E6117F264DAC83E8 /* Build configuration list for PBXNativeTarget "DynamicButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55DC5CE2550A89CE8316658F174BA94 /* Debug */,
+				E78959EFAF42CF097918591BB6FAE55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

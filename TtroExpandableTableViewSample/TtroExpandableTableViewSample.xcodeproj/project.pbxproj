@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75AFD2531F4999AC00771721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD2521F4999AC00771721 /* AppDelegate.swift */; };
+		75AFD2551F4999AC00771721 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD2541F4999AC00771721 /* ViewController.swift */; };
+		75AFD2581F4999AC00771721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AFD2561F4999AC00771721 /* Main.storyboard */; };
+		75AFD25A1F4999AC00771721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75AFD2591F4999AC00771721 /* Assets.xcassets */; };
+		75AFD25D1F4999AC00771721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AFD25B1F4999AC00771721 /* LaunchScreen.storyboard */; };
+		75AFD2781F499AEE00771721 /* TtroExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD2751F499AEE00771721 /* TtroExpandableTableView.swift */; };
+		75AFD2791F499AEE00771721 /* TtroExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD2761F499AEE00771721 /* TtroExpandableTableViewCell.swift */; };
+		75AFD27A1F499AEE00771721 /* TtroExpandedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD2771F499AEE00771721 /* TtroExpandedTableViewCell.swift */; };
+		80F5E05D99F1D38CF69D8B72 /* Pods_TtroExpandableTableViewSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFB033A9F896F7A96A10E50 /* Pods_TtroExpandableTableViewSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DFB033A9F896F7A96A10E50 /* Pods_TtroExpandableTableViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroExpandableTableViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AFD24F1F4999AC00771721 /* TtroExpandableTableViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TtroExpandableTableViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AFD2521F4999AC00771721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75AFD2541F4999AC00771721 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75AFD2571F4999AC00771721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75AFD2591F4999AC00771721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75AFD25C1F4999AC00771721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75AFD25E1F4999AC00771721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75AFD2751F499AEE00771721 /* TtroExpandableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TtroExpandableTableView.swift; path = ../../TtroExpandableTableView/TtroExpandableTableView.swift; sourceTree = "<group>"; };
+		75AFD2761F499AEE00771721 /* TtroExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TtroExpandableTableViewCell.swift; path = ../../TtroExpandableTableView/TtroExpandableTableViewCell.swift; sourceTree = "<group>"; };
+		75AFD2771F499AEE00771721 /* TtroExpandedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TtroExpandedTableViewCell.swift; path = ../../TtroExpandableTableView/TtroExpandedTableViewCell.swift; sourceTree = "<group>"; };
+		CB32608653ED2779B351AA60 /* Pods-TtroExpandableTableViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroExpandableTableViewSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroExpandableTableViewSample/Pods-TtroExpandableTableViewSample.release.xcconfig"; sourceTree = "<group>"; };
+		D27E77C2D4222F0762C5705C /* Pods-TtroExpandableTableViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroExpandableTableViewSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TtroExpandableTableViewSample/Pods-TtroExpandableTableViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75AFD24C1F4999AC00771721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F5E05D99F1D38CF69D8B72 /* Pods_TtroExpandableTableViewSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73D93849F45693232758C5B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DFB033A9F896F7A96A10E50 /* Pods_TtroExpandableTableViewSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75AFD2461F4999AC00771721 = {
+			isa = PBXGroup;
+			children = (
+				75AFD2511F4999AC00771721 /* TtroExpandableTableViewSample */,
+				75AFD2501F4999AC00771721 /* Products */,
+				A548DD16B9AECFC5528D3227 /* Pods */,
+				73D93849F45693232758C5B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75AFD2501F4999AC00771721 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75AFD24F1F4999AC00771721 /* TtroExpandableTableViewSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75AFD2511F4999AC00771721 /* TtroExpandableTableViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				75AFD27B1F499B1300771721 /* TtroExpandableTableView */,
+				75AFD2521F4999AC00771721 /* AppDelegate.swift */,
+				75AFD2541F4999AC00771721 /* ViewController.swift */,
+				75AFD2561F4999AC00771721 /* Main.storyboard */,
+				75AFD2591F4999AC00771721 /* Assets.xcassets */,
+				75AFD25B1F4999AC00771721 /* LaunchScreen.storyboard */,
+				75AFD25E1F4999AC00771721 /* Info.plist */,
+			);
+			path = TtroExpandableTableViewSample;
+			sourceTree = "<group>";
+		};
+		75AFD27B1F499B1300771721 /* TtroExpandableTableView */ = {
+			isa = PBXGroup;
+			children = (
+				75AFD2751F499AEE00771721 /* TtroExpandableTableView.swift */,
+				75AFD2761F499AEE00771721 /* TtroExpandableTableViewCell.swift */,
+				75AFD2771F499AEE00771721 /* TtroExpandedTableViewCell.swift */,
+			);
+			name = TtroExpandableTableView;
+			sourceTree = "<group>";
+		};
+		A548DD16B9AECFC5528D3227 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D27E77C2D4222F0762C5705C /* Pods-TtroExpandableTableViewSample.debug.xcconfig */,
+				CB32608653ED2779B351AA60 /* Pods-TtroExpandableTableViewSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75AFD24E1F4999AC00771721 /* TtroExpandableTableViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AFD2611F4999AC00771721 /* Build configuration list for PBXNativeTarget "TtroExpandableTableViewSample" */;
+			buildPhases = (
+				297336A82C3BDE01DD073A5E /* [CP] Check Pods Manifest.lock */,
+				75AFD24B1F4999AC00771721 /* Sources */,
+				75AFD24C1F4999AC00771721 /* Frameworks */,
+				75AFD24D1F4999AC00771721 /* Resources */,
+				31D8EFF95D62A9022A486688 /* [CP] Embed Pods Frameworks */,
+				B93EB4082B34DC8BA107550D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TtroExpandableTableViewSample;
+			productName = TtroExpandableTableViewSample;
+			productReference = 75AFD24F1F4999AC00771721 /* TtroExpandableTableViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75AFD2471F4999AC00771721 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ParsPay;
+				TargetAttributes = {
+					75AFD24E1F4999AC00771721 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F53V3ZJV96;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 75AFD24A1F4999AC00771721 /* Build configuration list for PBXProject "TtroExpandableTableViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75AFD2461F4999AC00771721;
+			productRefGroup = 75AFD2501F4999AC00771721 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75AFD24E1F4999AC00771721 /* TtroExpandableTableViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75AFD24D1F4999AC00771721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AFD25D1F4999AC00771721 /* LaunchScreen.storyboard in Resources */,
+				75AFD25A1F4999AC00771721 /* Assets.xcassets in Resources */,
+				75AFD2581F4999AC00771721 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		297336A82C3BDE01DD073A5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		31D8EFF95D62A9022A486688 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TtroExpandableTableViewSample/Pods-TtroExpandableTableViewSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B93EB4082B34DC8BA107550D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TtroExpandableTableViewSample/Pods-TtroExpandableTableViewSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75AFD24B1F4999AC00771721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AFD27A1F499AEE00771721 /* TtroExpandedTableViewCell.swift in Sources */,
+				75AFD2791F499AEE00771721 /* TtroExpandableTableViewCell.swift in Sources */,
+				75AFD2551F4999AC00771721 /* ViewController.swift in Sources */,
+				75AFD2781F499AEE00771721 /* TtroExpandableTableView.swift in Sources */,
+				75AFD2531F4999AC00771721 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75AFD2561F4999AC00771721 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75AFD2571F4999AC00771721 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75AFD25B1F4999AC00771721 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75AFD25C1F4999AC00771721 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75AFD25F1F4999AC00771721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75AFD2601F4999AC00771721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75AFD2621F4999AC00771721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27E77C2D4222F0762C5705C /* Pods-TtroExpandableTableViewSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F53V3ZJV96;
+				INFOPLIST_FILE = TtroExpandableTableViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroExpandableTableViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		75AFD2631F4999AC00771721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB32608653ED2779B351AA60 /* Pods-TtroExpandableTableViewSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F53V3ZJV96;
+				INFOPLIST_FILE = TtroExpandableTableViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroExpandableTableViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75AFD24A1F4999AC00771721 /* Build configuration list for PBXProject "TtroExpandableTableViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AFD25F1F4999AC00771721 /* Debug */,
+				75AFD2601F4999AC00771721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75AFD2611F4999AC00771721 /* Build configuration list for PBXNativeTarget "TtroExpandableTableViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AFD2621F4999AC00771721 /* Debug */,
+				75AFD2631F4999AC00771721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75AFD2471F4999AC00771721 /* Project object */;
+}
