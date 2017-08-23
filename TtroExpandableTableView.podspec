@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "TtroExpandableTableView"
   s.version      = "0.0.1"
-  s.summary      = ""
+  s.summary      = "Expandable tableview"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  Expandable tableview with one cell expanded at a time
                    DESC
 
   s.homepage     = "https://github.com/faraxnak/TtroExpandableTableView"
@@ -38,8 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT (example)"
+  s.license      = { :type => "MIT", :file => "MIT License" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Farid" => "email@address.com" }
+  s.author             = { "Farid" => "mf.azampour@daricpay.com" }
   # Or just: s.author    = "Farid"
   # s.authors            = { "Farid" => "email@address.com" }
   # s.social_media_url   = "http://twitter.com/Farid"
@@ -63,7 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios, "9.0"
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/faraxnak/TtroExpandableTableView.git", :commit => "7782f5b843d1b43c1a39f22347c217aa06733310" }
+  s.source       = { :git => "https://github.com/faraxnak/TtroExpandableTableView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "TtroExpandableTableView/**/*.{swift,h,m}"
+  s.exclude_files = "TtroExpandableTableViewSample/"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -133,5 +134,8 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-
+  s.dependency "EasyPeasy"
+  s.dependency "DynamicButton"
+  s.dependency 'PayWandBasicElements'
+  
 end

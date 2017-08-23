@@ -8,15 +8,17 @@
 
 import UIKit
 
-protocol TtroExpandableTableViewDelegate : UITableViewDataSource {
+public protocol TtroExpandableTableViewDelegate : UITableViewDataSource {
+    func getExpandableCellText(indexPath: IndexPath) -> String
     
+    func getExpandedCellText(indexPath: IndexPath) -> String
 }
 
 open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableViewDataSource {
     
     var selectedCellIndexPath : IndexPath?
     
-    var ttroTableDataSource : TtroExpandableTableViewDelegate!
+    public var ttroTableDataSource : TtroExpandableTableViewDelegate!
     
     var expandStateArray : [Int:Array<Bool>] = [:]
     
@@ -56,7 +58,7 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
 //            CATransaction.setCompletionBlock { [weak self] in
 //                self?.isAnimating = false
 //            }
-            var expandableIndexPath = self.expandableIndexPath(newSelectedIndexPath: indexPath)
+            var expandableIndexPath = self.expandableIndexPath(indexPath)
             if expandStateArray[expandableIndexPath.section]?[expandableIndexPath.row] ?? false {
                 selectedCellIndexPath = nil
                 if let cell = tableView.cellForRow(at: IndexPath(row: expandableIndexPath.row + 1, section: expandableIndexPath.section)) {
@@ -120,11 +122,14 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
         if selectedCellIndexPath != nil &&
             indexPath.row == selectedCellIndexPath!.row + 1 &&
             indexPath.section == selectedCellIndexPath!.section {
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TtroExpandedTableViewCell.self))!
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TtroExpandedTableViewCell.self)) as! TtroExpandedTableViewCell
             cell.contentView.alpha = 0
             UIView.animate(withDuration: 0.3, animations: {
                 cell.contentView.alpha = 1
             })
+            
+            cell.textView.text = ttroTableDataSource.getExpandedCellText(indexPath: selectedCellIndexPath!)
+            
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TtroExpandableTableViewCell.self)) as! TtroExpandableTableViewCell
@@ -136,6 +141,11 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
             } else {
                 cell.setMode(isExpanded: false, animated: false)
             }
+            let attributedString = NSMutableAttributedString(string: ttroTableDataSource.getExpandableCellText(indexPath: expandableIndexPath(indexPath)))
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
+            attributedString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+            cell.label.attributedText = attributedString;
             return cell
         }
     }
@@ -144,7 +154,7 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
         return ttroTableDataSource.numberOfSections?(in: self) ?? 1
     }
     
-    func expandableIndexPath(newSelectedIndexPath indexPath: IndexPath) -> IndexPath {
+    func expandableIndexPath(_ indexPath: IndexPath) -> IndexPath {
         if let currentSelectedIndexPath = selectedCellIndexPath {
             if indexPath.section == currentSelectedIndexPath.section &&
                 indexPath.row > currentSelectedIndexPath.row  {
@@ -161,11 +171,16 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
         if selectedCellIndexPath != nil &&
             indexPath.section == selectedCellIndexPath!.section &&
             indexPath.row == selectedCellIndexPath!.row + 1 {
-            return 100
+            return UITableViewAutomaticDimension
         } else {
-            return 50
+            return 70
         }
     }
+    
+    open func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+
 
 }
 

@@ -9,6 +9,7 @@
 import UIKit
 import DynamicButton
 import EasyPeasy
+import PayWandBasicElements
 
 protocol TtroExpandableTableViewCellDelegate : class {
     func expandableCell(onExpand expandableCell: TtroExpandableTableViewCell)
@@ -18,6 +19,9 @@ class TtroExpandableTableViewCell: UITableViewCell {
 
     var delegate: TtroExpandableTableViewCellDelegate!
     fileprivate var expandButton : DynamicButton!
+    
+    var label : UILabel!
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = UIColor.clear
@@ -27,20 +31,25 @@ class TtroExpandableTableViewCell: UITableViewCell {
         
         expandButton <- [
             Right(10),
-            Width(25),
+            Width(20),
             Height().like(expandButton, .width),
             CenterY()
         ]
         expandButton.bounceButtonOnTouch = false
         expandButton.lineWidth = 1
+        expandButton.strokeColor = UIColor.TtroColors.white.color
+        expandButton.highlightStokeColor = UIColor.TtroColors.white.color
         expandButton.addTarget(self, action: #selector(self.onExpand), for: .touchUpInside)
         
-        let label = UILabel()
-        label.text = "Touch to expand"
+        label = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.white.color)
+        label.numberOfLines = 2
+        label.adjustsFontSizeToFitWidth = true
         contentView.addSubview(label)
         label <- [
             Left(20),
-            CenterY()
+            CenterY(),
+            Right(10).to(expandButton, .left),
+            Height().like(contentView)
         ]
     }
     
