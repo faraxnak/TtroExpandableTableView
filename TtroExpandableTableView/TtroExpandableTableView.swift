@@ -128,7 +128,13 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
                 cell.contentView.alpha = 1
             })
             
-            cell.textView.text = ttroTableDataSource.getExpandedCellText(indexPath: selectedCellIndexPath!)
+            let style = NSMutableParagraphStyle()
+            style.lineSpacing = 8
+            let attributes = [NSParagraphStyleAttributeName : style]
+            cell.textView.attributedText = NSAttributedString(string:
+                ttroTableDataSource.getExpandedCellText(indexPath: selectedCellIndexPath!),
+                                                              attributes: attributes)
+//            cell.textView.text = ttroTableDataSource.getExpandedCellText(indexPath: selectedCellIndexPath!)
             
             return cell
         } else {
@@ -143,9 +149,9 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
             }
             let attributedString = NSMutableAttributedString(string: ttroTableDataSource.getExpandableCellText(indexPath: expandableIndexPath(indexPath)))
             let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
+            paragraphStyle.lineSpacing = 8 // Whatever line spacing you want in points
             attributedString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-            cell.label.attributedText = attributedString;
+            cell.label.attributedText = attributedString
             return cell
         }
     }

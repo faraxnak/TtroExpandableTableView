@@ -30,7 +30,7 @@ class TtroExpandableTableViewCell: UITableViewCell {
         contentView.addSubview(expandButton)
         
         expandButton <- [
-            Right(10),
+            Right(20),
             Width(20),
             Height().like(expandButton, .width),
             CenterY()
@@ -41,8 +41,8 @@ class TtroExpandableTableViewCell: UITableViewCell {
         expandButton.highlightStokeColor = UIColor.TtroColors.white.color
         expandButton.addTarget(self, action: #selector(self.onExpand), for: .touchUpInside)
         
-        label = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.white.color)
-        label.numberOfLines = 2
+        label = TtroLabel(font: UIFont.TtroPayWandFonts.regular2.font, color: UIColor.TtroColors.white.color)
+        label.numberOfLines = 3
         label.adjustsFontSizeToFitWidth = true
         contentView.addSubview(label)
         label <- [

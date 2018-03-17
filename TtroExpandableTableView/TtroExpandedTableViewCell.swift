@@ -37,7 +37,7 @@ class TtroExpandedTableViewCell: UITableViewCell {
         textView.numberOfLines = 0
         textView.lineBreakMode = .byWordWrapping
         textView.backgroundColor = UIColor.clear
-        textView.font = UIFont.TtroPayWandFonts.light2.font
+        textView.font = UIFont.TtroPayWandFonts.light3.font
     }
     
     required init?(coder aDecoder: NSCoder) {
