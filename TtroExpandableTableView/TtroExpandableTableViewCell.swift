@@ -65,6 +65,18 @@ class TtroExpandableTableViewCell: UITableViewCell {
         }
     }
     
+    func setFontColor(textColor: UIColor?, font: UIFont?, buttonColor : UIColor?){
+        if let color = textColor {
+            label.textColor = color
+        }
+        if let color = buttonColor {
+            expandButton.strokeColor = color
+        }
+        if let font = font {
+            label.font = font
+        }
+    }
+    
     func onExpand(){
         delegate.expandableCell(onExpand: self)
     }

@@ -40,6 +40,15 @@ class TtroExpandedTableViewCell: UITableViewCell {
         textView.font = UIFont.TtroPayWandFonts.light3.font
     }
     
+    func setFontColor(textColor: UIColor?, font: UIFont?){
+        if let color = textColor {
+            textView.textColor = color
+        }
+        if let font = font {
+            textView.font = font
+        }
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

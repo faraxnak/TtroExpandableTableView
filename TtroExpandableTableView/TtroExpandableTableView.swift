@@ -9,9 +9,9 @@
 import UIKit
 
 public protocol TtroExpandableTableViewDelegate : UITableViewDataSource {
-    func getExpandableCellText(indexPath: IndexPath) -> String
+    func getExpandableCellText(indexPath: IndexPath) -> NSMutableAttributedString
     
-    func getExpandedCellText(indexPath: IndexPath) -> String
+    func getExpandedCellText(indexPath: IndexPath) -> NSMutableAttributedString
 }
 
 open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableViewDataSource {
@@ -23,6 +23,8 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
     var expandStateArray : [Int:Array<Bool>] = [:]
     
     var isAnimating = false
+    
+    var textColor: UIColor? = nil, font: UIFont? = nil, buttonColor : UIColor? = nil
     
     public convenience init() {
         self.init(frame: .zero, style: .plain)
@@ -131,11 +133,10 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
             let style = NSMutableParagraphStyle()
             style.lineSpacing = 8
             let attributes = [NSParagraphStyleAttributeName : style]
-            cell.textView.attributedText = NSAttributedString(string:
-                ttroTableDataSource.getExpandedCellText(indexPath: selectedCellIndexPath!),
-                                                              attributes: attributes)
-//            cell.textView.text = ttroTableDataSource.getExpandedCellText(indexPath: selectedCellIndexPath!)
-            
+            let aText = ttroTableDataSource.getExpandedCellText(indexPath: selectedCellIndexPath!)
+            aText.addAttributes(attributes, range: NSMakeRange(0, aText.length))
+            cell.setFontColor(textColor: textColor, font: font)
+            cell.textView.attributedText = aText
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TtroExpandableTableViewCell.self)) as! TtroExpandableTableViewCell
@@ -147,11 +148,14 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
             } else {
                 cell.setMode(isExpanded: false, animated: false)
             }
-            let attributedString = NSMutableAttributedString(string: ttroTableDataSource.getExpandableCellText(indexPath: expandableIndexPath(indexPath)))
+            let attributedString = ttroTableDataSource.getExpandableCellText(indexPath: expandableIndexPath(indexPath))
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 8 // Whatever line spacing you want in points
-            attributedString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-            cell.label.attributedText = attributedString
+            attributedString.addAttribute(NSParagraphStyleAttributeName,
+                                          value:paragraphStyle,
+                                          range: NSMakeRange(0, attributedString.length))
+            cell.setFontColor(textColor: textColor, font: font, buttonColor: buttonColor)
+            cell.label.attributedText = attributedString            
             return cell
         }
     }
@@ -186,8 +190,12 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
     open func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
-
-
+    
+    public func setColorFont(textColor: UIColor? = nil, font: UIFont? = nil, buttonColor : UIColor? = nil){
+        self.textColor = textColor
+        self.buttonColor = buttonColor
+        self.font = font
+    }
 }
 
 extension TtroExpandableTableView : TtroExpandableTableViewCellDelegate {
