@@ -29,12 +29,12 @@ class TtroExpandableTableViewCell: UITableViewCell {
         expandButton = DynamicButton(style: .plus)
         contentView.addSubview(expandButton)
         
-        expandButton <- [
+        expandButton.easy.layout([
             Right(20),
             Width(20),
             Height().like(expandButton, .width),
             CenterY()
-        ]
+        ])
         expandButton.bounceButtonOnTouch = false
         expandButton.lineWidth = 1
         expandButton.strokeColor = UIColor.TtroColors.white.color
@@ -45,12 +45,12 @@ class TtroExpandableTableViewCell: UITableViewCell {
         label.numberOfLines = 3
         label.adjustsFontSizeToFitWidth = true
         contentView.addSubview(label)
-        label <- [
+        label.easy.layout([
             Left(20),
             CenterY(),
             Right(10).to(expandButton, .left),
             Height().like(contentView)
-        ]
+        ])
     }
     
     required init?(coder aDecoder: NSCoder) {

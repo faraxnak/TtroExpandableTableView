@@ -27,12 +27,12 @@ class TtroExpandedTableViewCell: UITableViewCell {
         
         textView = UILabel()
         contentView.addSubview(textView)
-        textView <- [
+        textView.easy.layout([
             Top(10),
             Bottom(10),
             Right(20),
             Left(20)
-        ]
+        ])
         textView.textColor = UIColor.white
         textView.numberOfLines = 0
         textView.lineBreakMode = .byWordWrapping
