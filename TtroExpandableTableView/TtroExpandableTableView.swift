@@ -132,7 +132,7 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
             
             let style = NSMutableParagraphStyle()
             style.lineSpacing = 8
-            let attributes = [NSParagraphStyleAttributeName : style]
+            let attributes = [NSAttributedStringKey.paragraphStyle : style]
             let aText = ttroTableDataSource.getExpandedCellText(indexPath: selectedCellIndexPath!)
             aText.addAttributes(attributes, range: NSMakeRange(0, aText.length))
             cell.setFontColor(textColor: textColor, font: font)
@@ -151,7 +151,7 @@ open class TtroExpandableTableView : UITableView, UITableViewDelegate, UITableVi
             let attributedString = ttroTableDataSource.getExpandableCellText(indexPath: expandableIndexPath(indexPath))
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 8 // Whatever line spacing you want in points
-            attributedString.addAttribute(NSParagraphStyleAttributeName,
+            attributedString.addAttribute(NSAttributedStringKey.paragraphStyle,
                                           value:paragraphStyle,
                                           range: NSMakeRange(0, attributedString.length))
             cell.setFontColor(textColor: textColor, font: font, buttonColor: buttonColor)

@@ -11,15 +11,19 @@
 		75AFD2411F4990B100771721 /* TtroExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD2401F4990B100771721 /* TtroExpandableTableViewCell.swift */; };
 		75AFD2431F4990C700771721 /* TtroExpandedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD2421F4990C700771721 /* TtroExpandedTableViewCell.swift */; };
 		75AFD2451F49913600771721 /* TtroExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD2441F49913600771721 /* TtroExpandableTableView.swift */; };
+		8DC152DF92196FA2047F9152 /* Pods_TtroExpandableTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193F8F31FD687498A9DA581D /* Pods_TtroExpandableTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		193F8F31FD687498A9DA581D /* Pods_TtroExpandableTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroExpandableTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AFD2351F49907300771721 /* TtroExpandableTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TtroExpandableTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AFD2381F49907300771721 /* TtroExpandableTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TtroExpandableTableView.h; sourceTree = "<group>"; };
 		75AFD2391F49907300771721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75AFD2401F4990B100771721 /* TtroExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroExpandableTableViewCell.swift; sourceTree = "<group>"; };
 		75AFD2421F4990C700771721 /* TtroExpandedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroExpandedTableViewCell.swift; sourceTree = "<group>"; };
 		75AFD2441F49913600771721 /* TtroExpandableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroExpandableTableView.swift; sourceTree = "<group>"; };
+		CF42AED0C2751FBADF1D56C2 /* Pods-TtroExpandableTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroExpandableTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TtroExpandableTableView/Pods-TtroExpandableTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		D302FB5DEC1656E4B6821E9C /* Pods-TtroExpandableTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroExpandableTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroExpandableTableView/Pods-TtroExpandableTableView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC152DF92196FA2047F9152 /* Pods_TtroExpandableTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				75AFD2371F49907300771721 /* TtroExpandableTableView */,
 				75AFD2361F49907300771721 /* Products */,
+				F6C644D7DF6C54FA17D83C7B /* Pods */,
+				A64E4DE7F7AA65F2EF68BC6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,23 @@
 			path = TtroExpandableTableView;
 			sourceTree = "<group>";
 		};
+		A64E4DE7F7AA65F2EF68BC6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				193F8F31FD687498A9DA581D /* Pods_TtroExpandableTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6C644D7DF6C54FA17D83C7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF42AED0C2751FBADF1D56C2 /* Pods-TtroExpandableTableView.debug.xcconfig */,
+				D302FB5DEC1656E4B6821E9C /* Pods-TtroExpandableTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -79,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75AFD23D1F49907300771721 /* Build configuration list for PBXNativeTarget "TtroExpandableTableView" */;
 			buildPhases = (
+				51B61A2BC05FA5148ADB12D9 /* [CP] Check Pods Manifest.lock */,
 				75AFD2301F49907300771721 /* Sources */,
 				75AFD2311F49907300771721 /* Frameworks */,
 				75AFD2321F49907300771721 /* Headers */,
@@ -105,7 +130,7 @@
 					75AFD2341F49907300771721 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = F53V3ZJV96;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +161,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51B61A2BC05FA5148ADB12D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TtroExpandableTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75AFD2301F49907300771721 /* Sources */ = {
@@ -254,6 +300,7 @@
 		};
 		75AFD23E1F49907300771721 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF42AED0C2751FBADF1D56C2 /* Pods-TtroExpandableTableView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -270,12 +317,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		75AFD23F1F49907300771721 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D302FB5DEC1656E4B6821E9C /* Pods-TtroExpandableTableView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -291,7 +340,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroExpandableTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -314,6 +364,7 @@
 				75AFD23F1F49907300771721 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

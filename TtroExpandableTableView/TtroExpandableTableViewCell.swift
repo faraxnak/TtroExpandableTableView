@@ -77,7 +77,7 @@ class TtroExpandableTableViewCell: UITableViewCell {
         }
     }
     
-    func onExpand(){
+    @objc func onExpand(){
         delegate.expandableCell(onExpand: self)
     }
 
